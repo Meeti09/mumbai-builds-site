@@ -83,20 +83,6 @@ you have final approved FAQ copy, replace the `faqs` array.
 Replace any file in `public/art/` with a real image (keeping the filename and
 roughly the aspect ratio) and the layout holds.
 
-## Visual-comparison tooling
-
-Used to iterate the design against the reference; keep or delete as you like.
-
-```bash
-npm run shots          # full-page shots at 390 / 834 / 1440 into .ref/shots
-npm run shots:ref      # same for the reference site
-npm run sections       # per-section shots + heights, for block-by-block diffing
-npm run interact       # drives FAQ / tabs / hovers / mobile menu, reports console errors
-node scripts/cropsel.mjs <url> <label> "#timeline" 390   # one element at one width
-```
-
-`.ref/` holds downloaded reference material and screenshots and is gitignored.
-
 ## Accessibility & motion
 
 `prefers-reduced-motion: reduce` disables Lenis, skips the hero typing
