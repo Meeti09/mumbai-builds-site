@@ -87,7 +87,7 @@ export default function OrganizersSection() {
                           {person.bio}
                         </div>
                       )}
-                      <div className="mt-3 flex gap-2 flex-wrap">
+                      <div className="mt-3 flex flex-wrap items-center gap-2">
                         {person.email && (
                           <a
                             href={`mailto:${person.email}`}
@@ -102,6 +102,51 @@ export default function OrganizersSection() {
                             className="text-xs bg-blue-600 px-3 py-1 rounded-full text-white hover:bg-blue-500 transition-colors"
                           >
                             {person.phone}
+                          </a>
+                        )}
+                        {person.linkedin && (
+                          <a
+                            href={person.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`${person.name} on LinkedIn`}
+                            className="flex h-7 w-7 items-center justify-center rounded-full bg-white transition hover:bg-gray-200"
+                          >
+                            <img
+                              src="/LinkedIn_icon.svg"
+                              alt="LinkedIn"
+                              className="h-4 w-4 object-contain"
+                            />
+                          </a>
+                        )}
+                        {person.x && (
+                          <a
+                            href={person.x}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`${person.name} on X`}
+                            className="flex h-7 w-7 items-center justify-center rounded-full bg-white transition hover:bg-gray-200"
+                          >
+                            <img
+                              src="/X_logo_2023.svg"
+                              alt="X"
+                              className="h-4 w-4 object-contain"
+                            />
+                          </a>
+                        )}
+                        {person.instagram && (
+                          <a
+                            href={person.instagram}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`${person.name} on Instagram`}
+                            className="flex h-7 w-7 items-center justify-center rounded-full bg-white transition hover:bg-gray-200"
+                          >
+                            <img
+                              src="/Instagram_logo_2016.svg"
+                              alt="Instagram"
+                              className="h-4 w-4 object-contain"
+                            />
                           </a>
                         )}
                       </div>

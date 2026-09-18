@@ -50,6 +50,7 @@ console.log(result.ship());`;
 /* -------------------------------------------------------------- overview */
 
 export const overview = {
+  eyebrow: "A stronger Mumbai, together",
   headingTop: "Mumbai Builds",
   headingMiddle: "in collaboration with",
   headingBottom: "Industry, Campuses & Mentors",
@@ -73,12 +74,12 @@ export const eligibilityPanel = {
   blurb:
     "Mumbai Builds is open to undergraduate students across the region. Bring a team, bring a laptop, and bring something you actually want to fix.",
   cta: { label: "Read the rulebook", href: "#faq" },
-  art: { src: "/art/emblem-mumbai.svg", alt: "Mumbai Builds emblem" },
-  artWidthClass: "max-w-[220px] sm:max-w-[260px] md:max-w-[300px]",
+  art: { src: "/art/assets/eligibility.png", alt: "Neon graduation cap representing student eligibility" },
+  artWidthClass: "max-w-[320px] sm:max-w-[400px] md:max-w-[440px]",
   stats: [
     { value: "UG", label: "Students Only" },
     { value: "18+", label: "Minimum Age" },
-    { value: "2–4", label: "Team Size" },
+    { value: "4", label: "Team Size" },
     { value: "4", label: "Eligible Regions" },
   ] satisfies StatCard[],
   cards: [
@@ -403,6 +404,9 @@ export type Person = {
   bio?: string;
   email?: string;
   phone?: string;
+  instagram?: string;
+  linkedin?: string;
+  x?: string;
   art: string;
 };
 
@@ -419,6 +423,9 @@ export const organizers: { heading: string; groups: { title: string; people: Per
           bio: "Partnerships, sponsor briefs and the Grand Finale run of day.",
           email: "gandhipiyush07@gmail.com",
           phone: "+91 9423194031",
+          instagram: "https://www.instagram.com/piyush_gandhi07/",
+          linkedin: "https://www.linkedin.com/in/piyushkgandhi/",
+          x: "https://x.com/piyush_gandhi07?s=20",
           art: "/art/avatar-01.svg",
         },
         {
@@ -428,6 +435,8 @@ export const organizers: { heading: string; groups: { title: string; people: Per
           bio: "Campus outreach, team registrations and Round 1 logistics.",
           email: "ashishrsb@gmail.com",
           phone: "+91 9969887121",
+          instagram: "https://www.instagram.com/ashishbansoders/",
+          x: "https://x.com/AshishBansode",
           art: "/art/avatar-02.svg",
         },
         {
@@ -437,6 +446,9 @@ export const organizers: { heading: string; groups: { title: string; people: Per
           bio: "Mentor network, jury coordination and participant experience.",
           email: "meetidoshi09@gmail.com",
           phone: "+91 9136770139",
+          instagram: "https://www.instagram.com/meeti_904/",
+          linkedin: "https://www.linkedin.com/in/meetidoshi2007/",
+          x: "https://x.com/MeetiDoshi87205",
           art: "/art/avatar-03.svg",
         },
       ],

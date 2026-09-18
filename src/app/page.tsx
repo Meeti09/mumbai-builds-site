@@ -3,6 +3,7 @@ import GlobalBackground from "@/components/GlobalBackground";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import OverviewSection from "@/components/OverviewSection";
+import TaxiScrollytelling from "@/components/TaxiScrollytelling";
 import InsightPanel from "@/components/InsightPanel";
 import TimelineSection from "@/components/TimelineSection";
 import TracksSection from "@/components/TracksSection";
@@ -32,7 +33,8 @@ export default function Home() {
         <Navbar />
         <Hero />
         <OverviewSection />
-        <InsightPanel {...eligibilityPanel} decorated />
+        <TaxiScrollytelling />
+        <InsightPanel {...eligibilityPanel} decorated compact />
         <InsightPanel {...prizePanel} />
         <TimelineSection />
         <TracksSection />
