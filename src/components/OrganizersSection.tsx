@@ -46,11 +46,12 @@ export default function OrganizersSection() {
               <h3 className="text-2xl md:text-3xl font-light text-white tracking-[0.1em] uppercase mb-8 border-b border-white/10 pb-4">
                 {group.title}
               </h3>
-              <div
-                className={`grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 transition-opacity duration-1000 ${
-                  visible ? "opacity-100" : "opacity-0"
-                }`}
-              >
+              <div className="overflow-x-auto sm:overflow-visible -mx-4 px-4 sm:mx-0 sm:px-0">
+                <div
+                  className={`grid grid-cols-5 gap-2 sm:gap-3 md:gap-4 min-w-[620px] sm:min-w-0 transition-opacity duration-1000 ${
+                    visible ? "opacity-100" : "opacity-0"
+                  }`}
+                >
                 {group.people.map((person) => (
                   <div
                     key={person.name}
@@ -64,11 +65,11 @@ export default function OrganizersSection() {
                     />
                     <div className="absolute inset-0 border border-white/5 opacity-40 rounded-xl z-20 pointer-events-none" />
 
-                    <div className="absolute left-0 right-0 bottom-0 p-3 z-30 bg-gradient-to-t from-black/95 to-transparent transition-opacity duration-300 opacity-100 group-hover:opacity-0">
-                      <div className="text-white font-semibold">
+                    <div className="absolute left-0 right-0 bottom-0 p-2 sm:p-3 z-30 bg-gradient-to-t from-black/95 to-transparent transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                      <div className="text-white font-semibold text-[10px] sm:text-xs md:text-sm lg:text-base leading-tight truncate whitespace-nowrap">
                         {person.name}
                       </div>
-                      <div className="text-gray-400 text-xs mt-0.5">
+                      <div className="text-gray-400 text-[10px] sm:text-xs mt-0.5 truncate whitespace-nowrap">
                         {person.role}
                       </div>
                     </div>
@@ -153,6 +154,7 @@ export default function OrganizersSection() {
                     </div>
                   </div>
                 ))}
+                </div>
               </div>
             </div>
           ))}
